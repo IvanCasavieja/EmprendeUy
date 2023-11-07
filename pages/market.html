@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Casavieja">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../styles/stylesmain.css">
+    <title>EmprendeUy</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="contenedor___nav---ordenado">
+                <a href="../index.html"><img src="../imgs/icono_page.png" alt="Logo de pagina"></a>
+            </div>
+            <div class="contenedor___nav---ordenado" id="contenedorBuscar">
+                <input id="buscador" name="buscador" type="search" placeholder="Buscar">
+            </div>
+            <ul class="contenedor___nav---ordenado" id="listaBtn">
+                <li>
+                    <p id="idioma">Idioma</p>
+                </li>
+                <li><a href="../pages/inicio_sesion.html">Iniciar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!------------------------------------------------------>
+    <main>
+        <!-- filtro -->
+        <div class="contenedor___palabra---filtro">
+            <p id="palabraFiltro">Filtro </p>
+            <div class="contenedor___icono---animado">
+                <i class="icono___animado">></i>
+            </div>
+        </div>
+        <div class="contenedor___filtro">
+            <div class="particion___filtro">
+                <label for="oficio">Oficio</label>
+                <select name="oficio" id="oficio">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="panadero">Panadero</option>
+                    <option value="albañil">Albañil</option>
+                    <option value="pintor">Pintor</option>
+                </select>
+            </div>
+            <div class="particion___filtro envios___presupuestos">
+                <label for="presupuestoGr">Presupuesto gratuito</label>
+                <input name="presupuestoGr" id="presupuestoGr" type="checkbox">
+                <label for="envioGr">Envio gratuito</label>
+                <input name="envioGr" id="envioGr" type="checkbox">
+            </div>
+            <div class="particion___filtro">
+                <label for="ubicacion">Ubicación</label>
+                <select name="ubicacion" id="Ubicacion">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="Montevideo">Montevideo</option>
+                    <option value="Maldonado">Maldonado</option>
+                    <option value="Canelones">Canelones</option>
+                </select>
+            </div>
+            <div class="particion___filtro">
+                <label for="precio">Rango de precio</label>
+                <input type="range" name="precio" id="precio">
+            </div>
+        </div>
+        <!-- cartas perfiles -->
+        <div class="container">
+            <a href="../pages/perfil_emprendedor---vista___usuario.html">
+                <div class="card">
+                    <img src="../imgs/alba_perfil.png" alt="Imagen 1">
+                    <div class="content">
+                        <h3>Albañil</h3>
+                        <ul>
+                            <li>optiones</li>
+                            <li>opciones</li>
+                            <li>opciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <a href="../pages/perfil_emprendedor---vista___usuario.html">
+                <div class="card">
+                    <img src="../imgs/panadero_car-removebg-preview.png" alt="Imagen 2">
+                    <div class="content">
+                        <h3>Panadero</h3>
+                        <ul>
+                            <li>optiones</li>
+                            <li>opciones</li>
+                            <li>opciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <a href="../pages/perfil_emprendedor---vista___usuario.html">
+                <div class="card">
+                    <img src="../imgs/alba_perfil.png" alt="Imagen 2">
+                    <div class="content">
+                        <h3>Panadero</h3>
+                        <ul>
+                            <li>optiones</li>
+                            <li>opciones</li>
+                            <li>opciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <a href="../pages/perfil_emprendedor---vista___usuario.html">
+                <div class="card">
+                    <img src="../imgs/panadero_car-removebg-preview.png" alt="Imagen 2">
+                    <div class="content">
+                        <h3>Panadero</h3>
+                        <ul>
+                            <li>optiones</li>
+                            <li>opciones</li>
+                            <li>opciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <a href="../pages/perfil_emprendedor---vista___usuario.html">
+                <div class="card">
+                    <img src="../imgs/alba_perfil.png" alt="Imagen 2">
+                    <div class="content">
+                        <h3>Panadero</h3>
+                        <ul>
+                            <li>optiones</li>
+                            <li>opciones</li>
+                            <li>opciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <a href="../pages/perfil_emprendedor---vista___usuario.html">
+                <div class="card">
+                    <img src="../imgs/panadero_car-removebg-preview.png" alt="Imagen 2">
+                    <div class="content">
+                        <h3>Panadero</h3>
+                        <ul>
+                            <li>optiones</li>
+                            <li>opciones</li>
+                            <li>opciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <a href="../pages/perfil_emprendedor---vista___usuario.html">
+                <div class="card">
+                    <img src="../imgs/alba_perfil.png" alt="Imagen 2">
+                    <div class="content">
+                        <h3>Panadero</h3>
+                        <ul>
+                            <li>optiones</li>
+                            <li>opciones</li>
+                            <li>opciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </main>
+    <!------------------------------------------------------>
+    <footer>
+        <div class="contenedor___informacion---pagina___footer" id="primerEstructuraFooter">
+            <h2>Acerca de nosotros:</h2>
+            <p>Queremos brindar una comunicación directa entre emprendedores y personas interesadas en sus servicios.
+            </p>
+            <p>Nuestro objetivo es, no ser más que un medio de comunicación, el cual, por medio de distintas
+                regulaciones, pueda ayudar al pequeño emprendedor a crecer.</p>
+        </div>
+        <div class="contenedor___informacion---pagina___footer" id="segundaEstructuraFooter">
+            <div class="contenedor___titulo">
+                <h2>Contacto y redes:</h2>
+            </div>
+            <div class="contenedor___imagenes---redes">
+                <a href="https://wa.me/123456789" target="_blank">
+                    <img src="../imgs/WSP-removebg-preview.png" alt="WhatsApp">
+                </a>
+                <a href="#"><img src="" alt="">
+                    <img src="../imgs/IG-removebg-preview.png" alt="Instagram">
+                </a>
+                <a href="#"><img src="" alt="">
+                    <img src="../imgs/IK-removebg-preview.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <div class="contenedor___informacion---pagina___footer">
+
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
