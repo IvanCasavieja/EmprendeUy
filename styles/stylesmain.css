@@ -698,6 +698,7 @@ footer {
 #primerEstructuraFooter p {
   text-align: justify;
   color: rgb(207, 204, 204);
+  cursor: text;
 }
 
 #segundaEstructuraFooter {
