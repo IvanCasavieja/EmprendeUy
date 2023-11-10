@@ -57,6 +57,20 @@ header nav {
   justify-content: center;
 }
 
+.contenedor___nav---ordenado___img---icono---mobile {
+  display: none;
+  width: 33%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor___nav---ordenado img {
+  margin-top: 5px;
+  width: 40%;
+  min-width: 202px;
+}
+
 .contenedor___nav---ordenado a img {
   margin-top: 5px;
   width: 40%;
@@ -101,13 +115,7 @@ p {
 }
 
 #listaBtn li a:hover::before {
-  content: "";
-  position: absolute;
   width: 100%;
-  background-color: black;
-  height: 1px;
-  bottom: 0;
-  text-align: center;
 }
 
 #listaBtn li p::before {
@@ -122,13 +130,7 @@ p {
 }
 
 #listaBtn li p:hover::before {
-  content: "";
-  position: absolute;
   width: 100%;
-  background-color: black;
-  height: 1px;
-  bottom: 0;
-  text-align: center;
 }
 
 #divIdioma {
@@ -472,12 +474,10 @@ select option:checked {
 
 .contenedor___palabra---filtro {
   margin-left: 20px;
-  width: 300px;
-  text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   cursor: pointer;
 }
 
@@ -535,6 +535,9 @@ select option:checked {
 .container a {
   text-decoration: none;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -586,15 +589,8 @@ select option:checked {
   margin: 10px 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .card {
-    width: 100%;
-  }
-}
-
 /*<-------------------------------------------------->*/
 /* perfil emprendedor vista usuario */
-
 
 .centrado___emprendedor---perfil {
   display: flex;
@@ -696,7 +692,6 @@ footer {
 }
 
 #primerEstructuraFooter p {
-  text-align: justify;
   color: rgb(207, 204, 204);
   cursor: text;
 }
@@ -705,7 +700,6 @@ footer {
   border-right: 1px solid white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 33%;
 }
 
@@ -730,10 +724,299 @@ footer {
   margin-top: 20px;
 }
 
+.contenedor___links---redes {
+  display: none;
+}
+
+.contenedor___links---redes a {
+  text-decoration: none;
+  color: rgb(207, 204, 204);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transition: .5s;
+}
+
+.contenedor___links---redes a:hover {
+  color: #55aaff;
+}
+
 #segundaEstructuraFooter a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 50px;
 }
 
 #segundaEstructuraFooter a img {
   width: 50px;
+}
+
+.contendor___informacion---footer___mobile{
+  display: none;
+}
+
+/* media querys */
+
+@media (max-width: 1670px) {
+  .imagen___fondo {
+    left: 70%;
+    top: 10%;
+  }
+
+  .imagen___fondo---2 {
+    left: 50%;
+    top: 25%;
+  }
+
+  .imagen___fondo---3 {
+    left: 72%;
+    top: 45%;
+  }
+}
+
+@media (max-width: 1260px) {
+
+  .contenedor___centrador---titulo___principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contenedor___titulo---principal {
+    position: static;
+  }
+
+  .imagen___fondo {
+    display: none;
+  }
+
+  .imagen___fondo---2 {
+    display: none;
+  }
+
+  .imagen___fondo---3 {
+    display: none;
+  }
+
+  .contenedor___imagenes---redes {
+    gap: 30px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  header nav {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  #footerMarket {
+    position: absolute;
+    bottom: -400px;
+  }
+
+  #segundoParrafoFooter {
+    display: none;
+  }
+
+  #segundaEstructuraFooter a {
+    width: 40px;
+  }
+
+  #segundaEstructuraFooter a img {
+    width: 40px;
+  }
+
+  footer #primerEstructuraFooter h2 {
+    font-size: 17px;
+  }
+
+  footer #primerEstructuraFooter p {
+    font-size: 15px;
+  }
+
+  footer #segundaEstructuraFooter h2 {
+    font-size: 17px;
+  }
+
+  #footerMarket {
+    bottom: -20vh;
+  }
+}
+
+@media (max-width: 880px) {
+  #footerMarket {
+    bottom: -60vh;
+  }
+}
+
+
+@media (max-width: 708px) {
+  #contenedorBuscar {
+    display: none;
+  }
+
+  .contenedor___nav---ordenado {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 660px) {
+  .contenedor___informacion---pagina___footer {
+    padding: 20px 1px;
+  }
+
+  .contenedor___imagenes---redes {
+    display: none;
+  }
+
+  .contenedor___links---redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90%;
+    margin-top: 5px;
+  }
+
+  footer {
+    height: 260px;
+  }
+
+  #footerMarket {
+    bottom: -100vh;
+  }
+
+}
+
+@media (max-width: 530px) {}
+
+@media (max-width: 460px) {
+  body {
+    background: aliceblue;
+  }
+
+  #listaBtn {
+    padding: 0;
+  }
+
+  .img___icono {
+    display: none;
+  }
+
+  .contenedor___nav---ordenado___img---icono---mobile {
+    display: flex;
+    width: 30%;
+  }
+
+  .contenedor___nav---ordenado {
+    width: 70%;
+  }
+
+  .contenedor___titulo---principal {
+    border-radius: 8px;
+    height: 400px;
+    width: 300px;
+    justify-content: space-around;
+    padding: 0px 10px;
+    background-color: rgb(252, 254, 255);
+  }
+
+  .contenedor___titulo---principal h1 {
+    width: 100%;
+  }
+
+  .contenedor___img---icono {
+    display: none;
+  }
+
+  .card {
+    width: 220px;
+  }
+
+  footer {
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #primerEstructuraFooter {
+    display: none;
+  }
+
+  #segundaEstructuraFooter {
+    display: none;
+  }
+
+  #tercerEstructuraFooter {
+    display: none ;
+  }
+
+  .contendor___informacion---footer___mobile {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contenedor___redes---mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+  }
+
+  .contenedor___img---link {
+    height: 33%;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contenedor___img---link a {
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+  }
+  .contenedor___img---link a:hover {
+    color: rgb(0, 132, 255);
+  }
+
+  .contenedor___img---link img {
+    width: 40px;
+  }
+
+  .acerca___de---nosotros{
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  .acerca___de---nosotros a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+  }
+  .acerca___de---nosotros a:hover{
+    color: rgb(0, 132, 255);
+  }
+
+  #footerMarket {
+    bottom: -230vh;
+  }
+
+  footer h2 {
+    text-align: center;
+  }
 }
