@@ -54,7 +54,10 @@ header nav {
   width: 33%;
   height: 100%;
   align-items: center;
-  justify-content: center;
+}
+
+.contenedor___nav---ordenado a {
+  width: 40%;
 }
 
 .contenedor___nav---ordenado___img---icono---mobile {
@@ -752,7 +755,7 @@ footer {
   width: 50px;
 }
 
-.contendor___informacion---footer___mobile{
+.contendor___informacion---footer___mobile {
   display: none;
 }
 
@@ -854,7 +857,6 @@ footer {
   }
 }
 
-
 @media (max-width: 708px) {
   #contenedorBuscar {
     display: none;
@@ -893,8 +895,6 @@ footer {
   }
 
 }
-
-@media (max-width: 530px) {}
 
 @media (max-width: 460px) {
   body {
@@ -954,7 +954,7 @@ footer {
   }
 
   #tercerEstructuraFooter {
-    display: none ;
+    display: none;
   }
 
   .contendor___informacion---footer___mobile {
@@ -988,6 +988,7 @@ footer {
     color: white;
     transition: .5s;
   }
+
   .contenedor___img---link a:hover {
     color: rgb(0, 132, 255);
   }
@@ -996,19 +997,20 @@ footer {
     width: 40px;
   }
 
-  .acerca___de---nosotros{
+  .acerca___de---nosotros {
     width: 100%;
     text-align: center;
     padding-left: 20px;
     margin-top: 20px;
   }
 
-  .acerca___de---nosotros a{
+  .acerca___de---nosotros a {
     text-decoration: none;
     color: white;
     transition: .5s;
   }
-  .acerca___de---nosotros a:hover{
+
+  .acerca___de---nosotros a:hover {
     color: rgb(0, 132, 255);
   }
 
