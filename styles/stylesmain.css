@@ -1022,3 +1022,9 @@ footer {
     text-align: center;
   }
 }
+
+@media(max-width: 375px) {
+  #footerMarket{
+    bottom: -320vh !important;
+  }
+}
