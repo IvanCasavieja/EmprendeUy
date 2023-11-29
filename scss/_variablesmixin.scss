@@ -1,0 +1,19 @@
+$efectoSubrayadoBtns: black;
+$font-family_1: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$font-family_2: 'Times New Roman', Times, serif;
+$color_2: black;
+$color_4: #bdbcbc;
+$color_6: white;
+$color_hover-btn: rgb(0, 132, 255);
+$background-color_1: aliceblue;
+$hoverSubmit: rgb(7, 42, 75);
+$background_color-footer: rgb(54, 54, 54);
+
+
+@mixin formularioFlex{
+    width: auto;
+    padding: 10px;
+}
+@mixin botonesAuto{
+    width: auto;
+}

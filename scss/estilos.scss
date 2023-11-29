@@ -1,0 +1,988 @@
+@import "variablesmixin";
+
+@keyframes cambiar {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
+}
+
+@-webkit-keyframes esfera-girando {
+	from {
+		background-position: left center;
+	}
+	to {
+		background-position: -51px center;
+	}
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: $font-family_1;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(45deg, $background-color_1, rgb(195, 203, 209), rgb(142, 167, 189));
+	background-size: 400% 400%;
+	position: relative;
+	animation: cambiar 15s ease-in-out infinite;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* navegador */
+header {
+	width: 100%;
+	height: 70px;
+	background-color: $background-color_1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	nav {
+		width: 80%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.contenedor___nav---ordenado {
+	display: flex;
+	width: 33%;
+	height: 100%;
+	align-items: center;
+	a {
+		width: 40%;
+		img {
+			margin-top: 5px;
+			width: 40%;
+			min-width: 202px;
+		}
+	}
+	img {
+		margin-top: 5px;
+		width: 40%;
+		min-width: 202px;
+	}
+	input {
+		height: 30px;
+		width: 80%;
+		border: none;
+		border-bottom: 1px solid black;
+		outline: none;
+	}
+}
+.contenedor___nav---ordenado___img---icono---mobile {
+	display: none;
+	width: 33%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+#listaBtn {
+	justify-content: end;
+	gap: 40px;
+	margin-bottom: 0;
+	li {
+		list-style: none;
+		a {
+			text-decoration: none;
+			color: $color_2;
+			position: relative;
+			cursor: pointer;
+			margin-bottom: 0px;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 0;
+				background-color: $efectoSubrayadoBtns;
+				height: 1px;
+				bottom: 0;
+				text-align: center;
+				transition: .5s;
+			}
+			&:hover {
+				&::before {
+					width: 100%;
+				}
+			}
+		}
+		#idioma {
+			&::before {
+				content: "";
+				position: absolute;
+				width: 0;
+				background-color: $efectoSubrayadoBtns;
+				height: 1px;
+				bottom: 0;
+				text-align: center;
+				transition: .5s;
+			}
+			&:hover {
+				&::before {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+#idioma {
+	text-decoration: none;
+	color: $color_2;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 0px;
+}
+#divIdioma {
+	width: 120px;
+	height: 150px;
+	background-color: $color_4;
+	display: none;
+	position: absolute;
+	left: 80%;
+	top: 5%;
+}
+main {
+	height: calc(100vh - 70px);
+}
+
+/* formulario inicio de sesion */
+.contenedor___formulario {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+.formulario___inicio---sesion {
+	width: 400px;
+	height: 500px;
+	border: 1px solid black;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	background-color: $color_6;
+	h1 {
+		color: $color_2;
+		font-family: $font-family_2;
+		margin-top: 20px;
+	}
+	a {
+		text-decoration: none;
+		transition: .3s;
+		color: $color_2;
+		margin-top: -20px;
+		&:hover {
+			color: $color_hover-btn;
+		}
+	}
+}
+.form-group {
+	position: relative;
+	margin-bottom: 2em;
+	width: 300px;
+	input {
+		font-size: 16px;
+		padding: 10px;
+		border: none;
+		border-bottom: 1px solid #ddd;
+		width: 100%;
+	}
+	label {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		font-size: 16px;
+		color: $color_4;
+		pointer-events: none;
+		transition: 0.5s ease all;
+	}
+}
+input {
+	&:focus {
+		outline: none;
+		border-bottom: 1px solid $color_hover-btn;
+	}
+	&:focus+label {
+		top: -20px;
+		font-size: 12px;
+		color: $color_hover-btn;
+	}
+	&:valid+label {
+		top: -20px;
+		font-size: 12px;
+		color: $color_hover-btn;
+	}
+}
+#submitIR {
+	padding: 8px 18px;
+	border: none;
+	background-color: $hoverSubmit;
+	color: $color_6;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+	&:hover {
+		background-color: $color_hover-btn;
+		transform: scale(1.05);
+	}
+	&:active {
+		background-color: $color_hover-btn;
+	}
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 5px black;
+	}
+}
+.contenedor___botones---registro {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	display: flex;
+	gap: 20px;
+	margin-top: 30px;
+	a {
+		text-decoration: none;
+		transition: .3s;
+		color: $color_2;
+		&:hover {
+			color: $color_hover-btn;
+		}
+	}
+}
+
+/* formulario de registro */
+.formulario___registro {
+	width: 400px;
+	height: 500px;
+	border: 1px solid black;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $color_6;
+	h1 {
+		color: $color_2;
+		font-family: $font-family_2;
+		margin-top: 20px;
+	}
+}
+.form-group_r {
+	position: relative;
+	margin-bottom: 2em;
+	width: 300px;
+	input {
+		font-size: 16px;
+		padding: 10px;
+		border: none;
+		border-bottom: 1px solid #ddd;
+		width: 100%;
+	}
+	label {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		font-size: 16px;
+		color: $color_4;
+		pointer-events: none;
+		transition: 0.5s ease all;
+	}
+}
+.contenedor___registro---btns___alineado {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	justify-content: center;
+	margin-top: 30px;
+	input {
+		width: 100%;
+	}
+}
+.contraseña {
+	margin: 0;
+}
+.botones___alineacion {
+	width: 145px;
+}
+.contenedor___select {
+	margin-bottom: 20px;
+}
+select {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 200px;
+	option {
+		padding: 10px;
+		&:checked {
+			background-color: $color_hover-btn;
+			color: $color_6;
+		}
+	}
+}
+
+/* titulo principal */
+.contenedor___titulo---principal {
+	height: 300px;
+	width: 400px;
+	color: $color_2;
+	position: absolute;
+	left: 20%;
+	top: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	h1 {
+		font-family: $font-family_2;
+		font-size: 40px;
+		margin-top: 25px;
+		width: 58%;
+		border-bottom: 1px solid black;
+	}
+	p {
+		text-align: justify;
+		cursor: text;
+	}
+}
+.contenedor___img---icono {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: url(../imgs/mapacirculo.png);
+	background-size: cover;
+	box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	margin-left: 240px;
+	-webkit-animation: esfera-girando 2s infinite linear;
+}
+.contenedor___btn---titulo {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		color: $color_2;
+		background-color: $background-color_1;
+		height: 30px;
+		width: 80px;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: .5s;
+		&:hover {
+			background-color: $color_hover-btn;
+			color: $color_6;
+		}
+	}
+}
+.imagen___fondo {
+	background: url(../imgs/pngtree-target-achievement-and-best-teamwork-background-flat-concept-png-image_3195757-removebg-preview.png);
+	width: 250px;
+	height: 250px;
+	background-size: cover;
+	position: absolute;
+	left: 65%;
+	top: 10%;
+}
+.imagen___fondo---2 {
+	background: url(../imgs/trabajo_lampara-transformed-removebg-preview.png);
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+	position: absolute;
+	left: 50%;
+	top: 25%;
+}
+.imagen___fondo---3 {
+	background: url(../imgs/cowork-envio-removebg-preview.png);
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+	position: absolute;
+	left: 65%;
+	top: 45%;
+}
+
+/* filtro market */
+.contenedor___palabra---filtro {
+	margin-left: 20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	display: flex;
+	justify-content: flex-start;
+	cursor: pointer;
+	#palabraFiltro {
+		height: 30px;
+		border: none;
+		position: relative;
+		margin-right: 10px;
+	}
+}
+.contenedor___filtro {
+	margin-left: 20px;
+	width: 300px;
+	border: 1px solid black;
+	height: 400px;
+	padding: 20px 0px;
+	display: none;
+}
+.particion___filtro {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+.envios___presupuestos {
+	margin-bottom: 50px;
+	label {
+		display: block;
+	}
+}
+.contenedor___icono---animado {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	color: $color_2;
+	transition: .5s;
+	text-align: center;
+}
+#palabraFiltro {
+	&:hover+.contenedor___icono---animado {
+		background-color: $color_6;
+		transform: rotate(360deg);
+	}
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	a {
+		text-decoration: none;
+		color: $color_2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.card {
+	background-color: $color_6;
+	width: 200px;
+	margin: 10px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: $color_2;
+	transition: .5s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&:hover {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	.content {
+		padding: 0px 10px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: center;
+		ul {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: column;
+		}
+	}
+	h3 {
+		margin: 0;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	p {
+		margin: 10px 0;
+	}
+}
+
+/* perfil emprendedor */
+.centrado___emprendedor---perfil {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contenedor___principal---perfil___emprendedor---vista___usuario {
+	width: 80%;
+	height: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 50% 50%;
+	background-color: $color_6;
+	border-radius: 8px;
+	color: $color_2;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.contenedor___columna---uno {
+	display: grid;
+	grid-template-areas: "imagenEmprendedor nombreEmprendedor nombreEmprendedor" "imagenEmprendedor serviciosEmprendedor serviciosEmprendedor";
+}
+.contenedor___img---emprendedor___vista---usuario {
+	grid-area: imagenEmprendedor;
+	max-width: 300px;
+	img {
+		width: 100%;
+		min-width: 200px;
+		height: 200px;
+	}
+}
+.informacion___personal---emprendedor___vista---usuario {
+	grid-area: nombreEmprendedor;
+	height: 100px;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+.lista___de---servicios {
+	grid-area: serviciosEmprendedor;
+	ul {
+		list-style: none;
+	}
+}
+.contenedor___columna---dos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	iframe {
+		width: 80%;
+		height: 80%;
+		border-radius: 20px;
+	}
+}
+.contenedor___columna---tres {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 300px;
+}
+.carrusel___imagenes---trabajos___emprendedor {
+	width: 50%;
+	min-width: 300px;
+}
+.contenedor___columna---cuatro {
+}
+.contenedor___perfil---emprendedor___mobile {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+}
+.contenedor___imagen---nombre___emprendedor---mobile {
+	display: flex;
+	width: 90%;
+	max-width: 800px;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+.imagen___emprendedor---perfil___mobile {
+	img {
+		object-fit: cover;
+		width: 200px;
+	}
+}
+.contenedor___lista---servicios___mobile {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 20px;
+	ul {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+.mapa___zona---trabajo___mobile {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	iframe {
+		width: 80%;
+		max-width: 800px;
+		height: 300px;
+	}
+}
+.carrusel___imagenes---trabajos___emprendedor---mobile {
+	width: 80%;
+	max-width: 800px;
+}
+
+/* footer */
+footer {
+	height: 200px;
+	background-color: $background_color-footer;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 20px;
+}
+.contenedor___informacion---pagina___footer {
+	height: 85%;
+	width: 33%;
+	padding: 20px 20px;
+}
+#primerEstructuraFooter {
+	border-right: 1px solid white;
+	width: 33%;
+	h2 {
+		margin-bottom: 5px;
+		font-size: 20px;
+		color: $color_4;
+	}
+	p {
+		color: $color_4;
+		cursor: text;
+	}
+}
+#segundaEstructuraFooter {
+	border-right: 1px solid white;
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	h2 {
+		margin-bottom: 5px;
+		font-size: 20px;
+		color: $color_4;
+	}
+	a {
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		width: 50px;
+		img {
+			width: 50px;
+		}
+	}
+}
+.contenedor___titulo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.contenedor___imagenes---redes {
+	display: flex;
+	height: 50px;
+	gap: 100px;
+	justify-content: center;
+	margin-top: 20px;
+}
+.contenedor___links---redes {
+	display: none;
+	a {
+		text-decoration: none;
+		color: $color_4;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		transition: .5s;
+		&:hover {
+			color: $color_hover-btn;
+		}
+	}
+}
+.contendor___informacion---footer___mobile {
+	display: none;
+}
+
+/* media querys */
+@media (max-width: 1670px) {
+	.imagen___fondo {
+		left: 70%;
+		top: 10%;
+	}
+	.imagen___fondo---2 {
+		left: 50%;
+		top: 25%;
+	}
+	.imagen___fondo---3 {
+		left: 72%;
+		top: 45%;
+	}
+}
+@media (max-width: 1260px) {
+	.contenedor___centrador---titulo___principal {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+	.contenedor___titulo---principal {
+		position: static;
+	}
+	.imagen___fondo {
+		display: none;
+	}
+	.imagen___fondo---2 {
+		display: none;
+	}
+	.imagen___fondo---3 {
+		display: none;
+	}
+	.contenedor___imagenes---redes {
+		gap: 30px;
+	}
+}
+@media (max-width: 900px) {
+	header {
+		nav {
+			width: 100%;
+			padding: 0px 10px;
+		}
+	}
+	.contenedor___principal---perfil___emprendedor---vista___usuario {
+		margin: 45px 0px 0px 0px;
+		width: 95%;
+	}
+	.informacion___personal---emprendedor___vista---usuario {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.lista___de---servicios {
+		li {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	#footerCambiante {
+		position: absolute;
+		bottom: -400px;
+		bottom: -20vh;
+	}
+	#segundoParrafoFooter {
+		display: none;
+	}
+	#segundaEstructuraFooter {
+		a {
+			width: 40px;
+			img {
+				width: 40px;
+			}
+		}
+	}
+	footer {
+		#primerEstructuraFooter {
+			h2 {
+				font-size: 17px;
+			}
+			p {
+				font-size: 15px;
+			}
+		}
+		#segundaEstructuraFooter {
+			h2 {
+				font-size: 17px;
+			}
+		}
+	}
+}
+@media (max-width: 880px) {
+	#footerCambiante {
+		bottom: -60vh;
+	}
+}
+@media (max-width: 708px) {
+	#contenedorBuscar {
+		display: none;
+	}
+	.contenedor___nav---ordenado {
+		width: 50%;
+	}
+}
+@media (max-width: 660px) {
+	.contenedor___principal---perfil___emprendedor---vista___usuario {
+		display: none;
+	}
+	.contenedor___perfil---emprendedor___mobile {
+		display: flex;
+		position: absolute;
+		bottom: -20vh;
+		background-color: $color_6;
+		border-radius: 8px;
+	}
+	.contenedor___informacion---pagina___footer {
+		padding: 20px 1px;
+	}
+	.contenedor___imagenes---redes {
+		display: none;
+	}
+	.contenedor___links---redes {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		height: 90%;
+		margin-top: 5px;
+	}
+	footer {
+		height: 260px;
+	}
+	#footerCambiante {
+		bottom: -100vh;
+	}
+	#footerCambianteDos {
+		position: absolute;
+		bottom: -70vh;
+	}
+}
+@media (max-width: 460px) {
+	#listaBtn {
+		padding: 0;
+	}
+	.img___icono {
+		display: none;
+	}
+	.contenedor___nav---ordenado___img---icono---mobile {
+		display: flex;
+		width: 30%;
+	}
+	.contenedor___nav---ordenado {
+		width: 70%;
+	}
+	.contenedor___titulo---principal {
+		border-radius: 8px;
+		height: 400px;
+        width: auto;
+		justify-content: space-around;
+		padding: 0px 10px;
+		h1 {
+			width: 80%;
+            font-size: 28px;
+		}
+	}
+	.contenedor___img---icono {
+		display: none;
+	}
+	.card {
+		width: 220px;
+	}
+	.formulario___inicio---sesion,.formulario___registro {
+        @include formularioFlex;
+	}
+
+	footer {
+		height: 300px;
+		flex-direction: column;
+		justify-content: center;
+		h2 {
+			text-align: center;
+		}
+	}
+	#primerEstructuraFooter {
+		display: none;
+	}
+	#segundaEstructuraFooter {
+		display: none;
+	}
+	#tercerEstructuraFooter {
+		display: none;
+	}
+	.contendor___informacion---footer___mobile {
+		width: 100%;
+		height: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.contenedor___redes---mobile {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+		padding: 10px 0px;
+	}
+	.contenedor___img---link {
+		height: 33%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		a {
+			text-decoration: none;
+			color: $color_6;
+			transition: .5s;
+			&:hover {
+				color: $color_hover-btn;
+			}
+		}
+		img {
+			width: 40px;
+		}
+	}
+	.acerca___de---nosotros {
+		width: 100%;
+		text-align: center;
+		padding-left: 20px;
+		margin-top: 20px;
+		a {
+			text-decoration: none;
+			color: $color_6;
+			transition: .5s;
+			&:hover {
+				color: $color_hover-btn;
+			}
+		}
+	}
+	#footerCambiante {
+		bottom: -230vh;
+	}
+}
+@media (max-width: 375px) {
+    .formulario___registro h1{
+        margin: 0;
+    }
+
+	.form-group,.form-group_r {
+		@include botonesAuto;
+	}
+	.contenedor___botones---registro {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+    .contenedor___registro---btns___alineado{
+        flex-direction: column;
+        gap: 0px;
+        width: auto;
+        height: 120px;
+    }
+
+	.contenedor___imagen---nombre___emprendedor---mobile {
+		flex-direction: column;
+	}
+}

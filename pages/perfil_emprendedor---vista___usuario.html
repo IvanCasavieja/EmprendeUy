@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ivan Casavieja">
     <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="../styles/stylesmain.css">
+    <meta name="description" content="Encuentra a el emprendimiento indicado">
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>EmprendeUy</title>
 </head>
 
@@ -61,12 +63,94 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="contenedor___columna---tres"></div>
+            <div class="contenedor___columna---tres">
+                <div class="carrusel___imagenes---trabajos___emprendedor">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imgs/alba_ejemplo/alba_ejemplo1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imgs/alba_ejemplo/alba_ejemplo4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imgs/alba_ejemplo/alba_ejemplo3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="contenedor___columna---cuatro"></div>
+        </div>
+
+        <!-- contenedor mobile -->
+        <div class="contenedor___perfil---emprendedor___mobile">
+            <div class="contenedor___imagen---nombre___emprendedor---mobile">
+                <div class="imagen___emprendedor---perfil___mobile">
+                    <img src="../imgs/alba_perfil.png" alt="Imagen de perfil de emprendedor">
+                </div>
+                <div class="contenedor___nombre---emprendedor___mobile">
+                    <h1>Roberto Juanes</h1>
+                </div>
+            </div>
+
+            <div class="contenedor___lista---servicios___mobile">
+                <h2>Servicios brindados</h2>
+                <ul>
+                    <li>servicios</li>
+                    <li>servicios</li>
+                    <li>servicios</li>
+                    <li>servicios</li>
+                    <li>servicios</li>
+                </ul>
+            </div>
+
+            <div class="mapa___zona---trabajo___mobile">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9259.509548378428!2d-56.18182255659626!3d-34.862985986962386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f800a7e53581f%3A0xf8a1f3137a9c920f!2sBrazo%20Oriental%2C%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1698332002140!5m2!1ses-419!2suy"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="carrusel___imagenes---trabajos___emprendedor---mobile">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../imgs/alba_ejemplo/alba_ejemplo1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imgs/alba_ejemplo/alba_ejemplo2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imgs/alba_ejemplo/alba_ejemplo3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
     <!-------------------------------------------------------->
-    <footer>
+    <footer id="footerCambianteDos">
         <div class="contenedor___informacion---pagina___footer" id="primerEstructuraFooter">
             <h2>Acerca de nosotros:</h2>
             <p>Queremos brindar una comunicación directa entre emprendedores y personas interesadas en sus servicios.
@@ -122,6 +206,15 @@
     </footer>
     <!-------------------------------------------------------->
     <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

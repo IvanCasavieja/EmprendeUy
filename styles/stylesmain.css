@@ -90,8 +90,8 @@ header nav {
 
 #listaBtn {
   justify-content: end;
-  padding-right: 40px;
   gap: 40px;
+  margin-bottom: 0;
 }
 
 #listaBtn li {
@@ -99,11 +99,12 @@ header nav {
 }
 
 #listaBtn li a,
-p {
+#idioma {
   text-decoration: none;
   color: black;
   position: relative;
   cursor: pointer;
+  margin-bottom: 0px;
 }
 
 #listaBtn li a::before {
@@ -121,7 +122,7 @@ p {
   width: 100%;
 }
 
-#listaBtn li p::before {
+#listaBtn li #idioma::before {
   content: "";
   position: absolute;
   width: 0;
@@ -132,7 +133,7 @@ p {
   transition: .5s;
 }
 
-#listaBtn li p:hover::before {
+#listaBtn li #idioma:hover::before {
   width: 100%;
 }
 
@@ -520,6 +521,7 @@ select option:checked {
   border-radius: 50%;
   color: black;
   transition: .5s;
+  text-align: center;
 }
 
 #palabraFiltro:hover+.contenedor___icono---animado {
@@ -614,7 +616,6 @@ select option:checked {
 }
 
 .contenedor___columna---uno {
-  padding-left: 100px;
   display: grid;
   grid-template-areas: "imagenEmprendedor nombreEmprendedor nombreEmprendedor" "imagenEmprendedor serviciosEmprendedor serviciosEmprendedor";
 }
@@ -627,19 +628,18 @@ select option:checked {
 .contenedor___img---emprendedor___vista---usuario img {
   width: 100%;
   min-width: 200px;
+  height: 200px;
 }
 
 .informacion___personal---emprendedor___vista---usuario {
   grid-area: nombreEmprendedor;
   height: 100px;
-  width: 300px;
   padding-top: 30px;
   padding-left: 30px;
 }
 
 .lista___de---servicios {
   grid-area: serviciosEmprendedor;
-  width: 300px;
 }
 
 .lista___de---servicios ul {
@@ -659,11 +659,75 @@ select option:checked {
 }
 
 .contenedor___columna---tres {
-  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.carrusel___imagenes---trabajos___emprendedor {
+  width: 50%;
+  min-width: 300px;
+
 }
 
 .contenedor___columna---cuatro {
   background-color: red;
+}
+
+/* perfil emprendedor mobile */
+/*<-------------------------------------------------->*/
+.contenedor___perfil---emprendedor___mobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contenedor___imagen---nombre___emprendedor---mobile {
+  display: flex;
+  width: 90%;
+  max-width: 800px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen___emprendedor---perfil___mobile img {
+  object-fit: cover;
+  width: 200px;
+}
+
+.contenedor___lista---servicios___mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+.contenedor___lista---servicios___mobile ul {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mapa___zona---trabajo___mobile {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.mapa___zona---trabajo___mobile iframe {
+  width: 80%;
+  max-width: 800px;
+  height: 300px;
+}
+
+.carrusel___imagenes---trabajos___emprendedor---mobile {
+  width: 80%;
+  max-width: 800px;
 }
 
 /*<-------------------------------------------------->*/
@@ -817,7 +881,26 @@ footer {
     padding: 0px 10px;
   }
 
-  #footerMarket {
+  .contenedor___principal---perfil___emprendedor---vista___usuario {
+    margin: 45px 0px 0px 0px;
+    width: 95%;
+  }
+
+  .informacion___personal---emprendedor___vista---usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+  .lista___de---servicios li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footerCambiante {
     position: absolute;
     bottom: -400px;
   }
@@ -846,13 +929,14 @@ footer {
     font-size: 17px;
   }
 
-  #footerMarket {
+  #footerCambiante {
     bottom: -20vh;
   }
 }
 
 @media (max-width: 880px) {
-  #footerMarket {
+
+  #footerCambiante {
     bottom: -60vh;
   }
 }
@@ -869,6 +953,19 @@ footer {
 }
 
 @media (max-width: 660px) {
+
+  .contenedor___principal---perfil___emprendedor---vista___usuario {
+    display: none;
+  }
+
+  .contenedor___perfil---emprendedor___mobile {
+    display: flex;
+    position: absolute;
+    bottom: -20vh;
+    background-color: white;
+    border-radius: 8px;
+  }
+
   .contenedor___informacion---pagina___footer {
     padding: 20px 1px;
   }
@@ -890,8 +987,13 @@ footer {
     height: 260px;
   }
 
-  #footerMarket {
+  #footerCambiante {
     bottom: -100vh;
+  }
+
+  #footerCambianteDos {
+    position: absolute;
+    bottom: -70vh;
   }
 
 }
@@ -939,6 +1041,11 @@ footer {
     width: 220px;
   }
 
+  .formulario___inicio---sesion {
+    width: auto;
+    padding: 10px;
+  }
+
   footer {
     height: 300px;
     flex-direction: column;
@@ -977,7 +1084,6 @@ footer {
 
   .contenedor___img---link {
     height: 33%;
-    width: 35%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1014,17 +1120,28 @@ footer {
     color: rgb(0, 132, 255);
   }
 
-  #footerMarket {
-    bottom: -230vh;
-  }
-
   footer h2 {
     text-align: center;
+  }
+
+  #footerCambiante {
+    bottom: -230vh;
   }
 }
 
 @media(max-width: 375px) {
-  #footerMarket{
-    bottom: -320vh !important;
+
+  .form-group{
+    width: auto;
   }
+
+  .contenedor___botones---registro{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contenedor___imagen---nombre___emprendedor---mobile {
+    flex-direction: column;
+  }
+
 }
