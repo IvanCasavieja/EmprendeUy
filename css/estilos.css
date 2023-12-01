@@ -852,7 +852,7 @@ footer {
   .contenedor___perfil---emprendedor___mobile {
     display: flex;
     position: absolute;
-    bottom: -20vh;
+    bottom: -30vh;
     background-color: white;
     border-radius: 8px;
   }
