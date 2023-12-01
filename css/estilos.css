@@ -750,7 +750,7 @@ footer {
   display: none;
 }
 
-/* media querys */
+/* media querys width*/
 @media (max-width: 1670px) {
   .imagen___fondo {
     left: 70%;
@@ -851,8 +851,7 @@ footer {
   }
   .contenedor___perfil---emprendedor___mobile {
     display: flex;
-    position: absolute;
-    bottom: -30vh;
+    margin-top: 30vh;
     background-color: white;
     border-radius: 8px;
   }
@@ -912,7 +911,11 @@ footer {
   .card {
     width: 220px;
   }
-  .formulario___inicio---sesion, .formulario___registro {
+  .formulario___inicio---sesion {
+    width: auto;
+    padding: 10px;
+  }
+  .formulario___registro {
     width: auto;
     padding: 10px;
   }
@@ -988,7 +991,10 @@ footer {
   .formulario___registro h1 {
     margin: 0;
   }
-  .form-group, .form-group_r {
+  .form-group {
+    width: auto;
+  }
+  .form-group_r {
     width: auto;
   }
   .contenedor___botones---registro {
@@ -1003,6 +1009,71 @@ footer {
   }
   .contenedor___imagen---nombre___emprendedor---mobile {
     flex-direction: column;
+  }
+}
+
+/* media querys height */
+
+@media (max-height: 845px) {
+  #mainCambiante {
+    height: auto;
+  }
+  .contenedor___perfil---emprendedor___mobile {
+    margin-top: 60vh;
+  }
+  #footerCambianteDos {
+    bottom: -100vh;
+  }
+  #footerCambiante {
+    position: static;
+  }
+}
+@media (max-height: 695px) {
+  .contenedor___perfil---emprendedor___mobile {
+    margin-top: 85vh;
+  }
+  #footerCambianteDos {
+    bottom: -140vh;
+  }
+}
+@media (max-height: 600px) {
+  .contenedor___perfil---emprendedor___mobile {
+    margin-top: 110vh;
+  }
+  #footerCambianteDos {
+    bottom: -170vh;
+  }
+}
+@media (max-height: 530px) {
+  .contenedor___perfil---emprendedor___mobile {
+    margin-top: 140vh;
+  }
+  #footerCambianteDos {
+    bottom: -210vh;
+  }
+}
+@media (max-height: 460px) {
+  .contenedor___perfil---emprendedor___mobile {
+    margin-top: 180vh;
+  }
+  #footerCambianteDos {
+    bottom: -250vh;
+  }
+}
+@media (max-height: 400px) {
+  .contenedor___perfil---emprendedor___mobile {
+    margin-top: 240vh;
+  }
+  #footerCambianteDos {
+    bottom: -330vh;
+  }
+}
+@media (max-height: 330px) {
+  .contenedor___perfil---emprendedor___mobile {
+    margin-top: 280vh;
+  }
+  #footerCambianteDos {
+    bottom: -380vh;
   }
 }
 

@@ -717,6 +717,12 @@ footer {
 }
 
 /* media querys */
+$color_1: white;
+$color_2: rgb(0, 132, 255);
+$background-color_1: white;
+
+/* media querys */
+/* media querys height */
 @media (max-width: 1670px) {
 	.imagen___fondo {
 		left: 70%;
@@ -829,9 +835,8 @@ footer {
 	}
 	.contenedor___perfil---emprendedor___mobile {
 		display: flex;
-		position: absolute;
-		bottom: -30vh;
-		background-color: $color_6;
+		margin-top: 30vh;
+		background-color: $background-color_1;
 		border-radius: 8px;
 	}
 	.contenedor___informacion---pagina___footer {
@@ -876,12 +881,12 @@ footer {
 	.contenedor___titulo---principal {
 		border-radius: 8px;
 		height: 400px;
-        width: auto;
+		width: auto;
 		justify-content: space-around;
 		padding: 0px 10px;
 		h1 {
 			width: 80%;
-            font-size: 28px;
+			font-size: 28px;
 		}
 	}
 	.contenedor___img---icono {
@@ -890,10 +895,14 @@ footer {
 	.card {
 		width: 220px;
 	}
-	.formulario___inicio---sesion,.formulario___registro {
-        @include formularioFlex;
+	.formulario___inicio---sesion {
+		width: auto;
+		padding: 10px;
 	}
-
+	.formulario___registro {
+		width: auto;
+		padding: 10px;
+	}
 	footer {
 		height: 300px;
 		flex-direction: column;
@@ -934,10 +943,10 @@ footer {
 		align-items: center;
 		a {
 			text-decoration: none;
-			color: $color_6;
-			transition: .5s;
+			color: $color_1;
+			transition: 0.5s;
 			&:hover {
-				color: $color_hover-btn;
+				color: $color_2;
 			}
 		}
 		img {
@@ -951,10 +960,10 @@ footer {
 		margin-top: 20px;
 		a {
 			text-decoration: none;
-			color: $color_6;
-			transition: .5s;
+			color: $color_1;
+			transition: 0.5s;
 			&:hover {
-				color: $color_hover-btn;
+				color: $color_2;
 			}
 		}
 	}
@@ -963,26 +972,90 @@ footer {
 	}
 }
 @media (max-width: 375px) {
-    .formulario___registro h1{
-        margin: 0;
-    }
-
-	.form-group,.form-group_r {
-		@include botonesAuto;
+	.formulario___registro {
+		h1 {
+			margin: 0;
+		}
+	}
+	.form-group {
+		width: auto;
+	}
+	.form-group_r {
+		width: auto;
 	}
 	.contenedor___botones---registro {
 		flex-direction: column;
 		gap: 40px;
 	}
-
-    .contenedor___registro---btns___alineado{
-        flex-direction: column;
-        gap: 0px;
-        width: auto;
-        height: 120px;
-    }
-
+	.contenedor___registro---btns___alineado {
+		flex-direction: column;
+		gap: 0px;
+		width: auto;
+		height: 120px;
+	}
 	.contenedor___imagen---nombre___emprendedor---mobile {
 		flex-direction: column;
+	}
+}
+@media (max-height: 845px) {
+	#mainCambiante {
+		height: auto;
+	}
+	.contenedor___perfil---emprendedor___mobile {
+		margin-top: 60vh;
+	}
+	#footerCambianteDos {
+		bottom: -100vh;
+	}
+	#footerCambiante {
+		position: static;
+	}
+}
+@media (max-height: 695px) {
+	.contenedor___perfil---emprendedor___mobile {
+		margin-top: 85vh;
+	}
+	#footerCambianteDos {
+		bottom: -140vh;
+	}
+}
+@media (max-height: 600px) {
+	.contenedor___perfil---emprendedor___mobile {
+		margin-top: 110vh;
+	}
+	#footerCambianteDos {
+		bottom: -170vh;
+	}
+}
+@media (max-height: 530px) {
+	.contenedor___perfil---emprendedor___mobile {
+		margin-top: 140vh;
+	}
+	#footerCambianteDos {
+		bottom: -210vh;
+	}
+}
+@media (max-height: 460px) {
+	.contenedor___perfil---emprendedor___mobile {
+		margin-top: 180vh;
+	}
+	#footerCambianteDos {
+		bottom: -250vh;
+	}
+}
+@media (max-height: 400px) {
+	.contenedor___perfil---emprendedor___mobile {
+		margin-top: 240vh;
+	}
+	#footerCambianteDos {
+		bottom: -330vh;
+	}
+}
+@media (max-height: 330px) {
+	.contenedor___perfil---emprendedor___mobile {
+		margin-top: 280vh;
+	}
+	#footerCambianteDos {
+		bottom: -380vh;
 	}
 }
