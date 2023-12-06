@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ivan Casavieja">
-    <meta name="keywords" content="">
-    <meta name="description" content="Encuentra a el emprendimiento indicado">
+    <meta name="keywords" content="Emprendedor, perfil, enviar consulta">
+    <meta name="description" content="Encuentra al emprendimiento indicado, perfil de emprendedor">
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -29,7 +29,7 @@
                 <li>
                     <p id="idioma">Idioma</p>
                 </li>
-                <li><a href="../pages/inicio_sesion.html">Iniciar sesion</a></li>
+                <li><a href="../pages/inicio_sesion.html">Iniciar sesión</a></li>
             </ul>
             <div id="divIdioma">
 
@@ -55,6 +55,13 @@
                         <li>servicios</li>
                         <li>servicios</li>
                     </ul>
+                    <ul>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                    </ul>
                 </div>
             </div>
             <div class="contenedor___columna---dos">
@@ -64,33 +71,30 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="contenedor___columna---tres">
-                <div class="carrusel___imagenes---trabajos___emprendedor">
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../imgs/alba_ejemplo/alba_ejemplo1.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imgs/alba_ejemplo/alba_ejemplo4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imgs/alba_ejemplo/alba_ejemplo3.jpg" class="d-block w-100" alt="...">
-                            </div>
+
+                <div class="information">
+                    <div class="container___slider">
+                        <div class="slider" id="slider">
+                            <div class="slider___section"><img src="../imgs/img_prueba_alba/albanil.webp" alt=""
+                                    class="slider___img"></div>
+                            <div class="slider___section"><img src="../imgs/img_prueba_alba/obrerostelenochewebp.webp"
+                                    alt="" class="slider___img"></div>
+                            <div class="slider___section"><img src="../imgs/img_prueba_alba/Oficio-albanil.webp" alt=""
+                                    class="slider___img"></div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <button class="btn___slider btn___slider---izquierda" id="btnLeft">&#60;</button>
+                        <button class="btn___slider btn___slider---derecha" id="btnRight">&#62;</button>
                     </div>
                 </div>
             </div>
-            <div class="contenedor___columna---cuatro"></div>
+            <div class="contenedor___columna---cuatro">
+                <form action="send" id="formularioConsultas">
+                    <h2>Consulta tus dudas</h2>
+                    <input type="email" id="correoConsulta" required placeholder="Correo electronico">
+                    <textarea name="consulta" id="consulta" rows="4" placeholder="Escribe aquí"></textarea>
+                    <input type="submit" id="submit">
+                </form>
+            </div>
         </div>
 
         <!-- contenedor mobile -->
@@ -106,13 +110,22 @@
 
             <div class="contenedor___lista---servicios___mobile">
                 <h2>Servicios brindados</h2>
-                <ul>
-                    <li>servicios</li>
-                    <li>servicios</li>
-                    <li>servicios</li>
-                    <li>servicios</li>
-                    <li>servicios</li>
-                </ul>
+                <div class="contenedor___lista---servicios">
+                    <ul>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                    </ul>
+                    <ul>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                        <li>servicios</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="mapa___zona---trabajo___mobile">
@@ -122,31 +135,13 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="carrusel___imagenes---trabajos___emprendedor---mobile">
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../imgs/alba_ejemplo/alba_ejemplo1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../imgs/alba_ejemplo/alba_ejemplo2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../imgs/alba_ejemplo/alba_ejemplo3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+            <form action="send" id="formularioConsultas">
+                <h2>Consulta tus dudas</h2>
+                <input type="email" id="correoConsulta" required placeholder="Correo electronico">
+                <textarea name="consulta" id="consulta" rows="4" placeholder="Escribe aquí"></textarea>
+                <input type="submit" id="submit">
+            </form>
+
         </div>
     </main>
     <!-------------------------------------------------------->
@@ -180,7 +175,8 @@
         </div>
 
         <div class="contenedor___informacion---pagina___footer" id="tercerEstructuraFooter">
-
+            <h2>Politica de privacidad</h2>
+            <p>Ingresa <a href="#">aquí</a> para mayor información</p>
         </div>
 
         <!-- vista footer mobile -->
@@ -201,6 +197,7 @@
             </div>
             <div class="acerca___de---nosotros">
                 <a href="#">Acerca de nosotros</a>
+                <a href="#">Soporte técnico</a>
             </div>
         </div>
     </footer>
