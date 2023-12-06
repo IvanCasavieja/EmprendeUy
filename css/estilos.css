@@ -661,10 +661,11 @@ select option:checked {
 
 .information {
   margin-left: 25px;
+  margin-top: 60px;
   border-radius: 15px;
   margin-right: 25px;
   overflow: hidden;
-  width: 60%;
+  width: 55%;
 }
 
 .container___slider {
@@ -925,7 +926,7 @@ footer {
 #tercerEstructuraFooter h2 {
   color: #bdbcbc;
   font-size: 20px;
-
+  text-align: center;
 }
 
 #tercerEstructuraFooter p {
@@ -986,7 +987,7 @@ footer {
   }
 
   .information {
-    width: 73%;
+    width: 60%;
   }
 
   .contenedor___imagenes---redes {
@@ -1048,6 +1049,10 @@ footer {
   }
 
   footer #segundaEstructuraFooter h2 {
+    font-size: 17px;
+  }
+
+  footer #tercerEstructuraFooter h2 {
     font-size: 17px;
   }
 }
@@ -1297,6 +1302,7 @@ footer {
     position: static;
   }
 }
+
 @media (max-height: 750px) {
   #mainCambiante {
     height: auto;
