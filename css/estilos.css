@@ -527,6 +527,26 @@ select option:checked {
   transform: rotate(360deg);
 }
 
+.contenedor___paginas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contenedor___paginas a {
+  text-decoration: none;
+  color: black;
+}
+
+.contenedorTotalPaginasMarket {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 520px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -662,6 +682,7 @@ select option:checked {
 .information {
   margin-left: 25px;
   margin-top: 60px;
+  margin-bottom: 40px;
   border-radius: 15px;
   margin-right: 25px;
   overflow: hidden;
@@ -959,9 +980,27 @@ footer {
     left: 72%;
     top: 45%;
   }
+
+}
+
+@media (max-width: 1540px) {
+  #footerCambiante {
+    position: absolute;
+    bottom: -20vh;
+  }
+}
+
+@media(max-width: 1425px) {
+  #divIdioma {
+    left: 75%;
+  }
 }
 
 @media (max-width: 1260px) {
+  #divIdioma {
+    left: 70%;
+  }
+
   .contenedor___centrador---titulo___principal {
     display: flex;
     align-items: center;
@@ -1024,7 +1063,6 @@ footer {
 
   #footerCambiante {
     position: absolute;
-    bottom: -400px;
     bottom: -20vh;
   }
 
@@ -1074,6 +1112,11 @@ footer {
 }
 
 @media (max-width: 660px) {
+
+  #divIdioma {
+    left: 60%;
+  }
+
   .contenedor___principal---perfil___emprendedor---vista___usuario {
     display: none;
   }
@@ -1233,6 +1276,8 @@ footer {
 
   .acerca___de---nosotros {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding-left: 20px;
     margin-top: 20px;
@@ -1254,6 +1299,11 @@ footer {
 }
 
 @media (max-width: 375px) {
+
+  #divIdioma {
+    left: 45%;
+  }
+
   .formulario___registro h1 {
     margin: 0;
   }
@@ -1286,9 +1336,6 @@ footer {
 /* media querys height */
 
 @media (max-height: 845px) {
-  #mainCambiante {
-    height: auto;
-  }
 
   .contenedor___perfil---emprendedor___mobile {
     margin-top: 70vh;
@@ -1297,16 +1344,9 @@ footer {
   #footerCambianteDos {
     bottom: -110vh;
   }
-
-  #footerCambiante {
-    position: static;
-  }
 }
 
 @media (max-height: 750px) {
-  #mainCambiante {
-    height: auto;
-  }
 
   .contenedor___perfil---emprendedor___mobile {
     margin-top: 85vh;
@@ -1332,12 +1372,22 @@ footer {
 }
 
 @media (max-height: 600px) {
+
+  .formulario___inicio---sesion,
+  .formulario___registro {
+    margin-top: 30vh;
+  }
+
   .contenedor___perfil---emprendedor___mobile {
     margin-top: 145vh;
   }
 
   #footerCambianteDos {
     bottom: -195vh;
+  }
+
+  #footerInicioSesionRegistro {
+    margin-top: 30vh;
   }
 }
 
@@ -1352,6 +1402,12 @@ footer {
 }
 
 @media (max-height: 460px) {
+
+  .formulario___inicio---sesion,
+  .formulario___registro {
+    margin-top: 50vh;
+  }
+
   .contenedor___perfil---emprendedor___mobile {
     margin-top: 220vh;
   }
@@ -1359,9 +1415,19 @@ footer {
   #footerCambianteDos {
     bottom: -295vh;
   }
+
+  #footerInicioSesionRegistro {
+    margin-top: 50vh;
+  }
 }
 
 @media (max-height: 400px) {
+
+  .formulario___inicio---sesion,
+  .formulario___registro {
+    margin-top: 75vh;
+  }
+
   .contenedor___perfil---emprendedor___mobile {
     margin-top: 290vh;
   }
@@ -1369,15 +1435,29 @@ footer {
   #footerCambianteDos {
     bottom: -370vh;
   }
+
+  #footerInicioSesionRegistro {
+    margin-top: 75vh;
+  }
 }
 
 @media (max-height: 330px) {
+
+  .formulario___inicio---sesion,
+  .formulario___registro {
+    margin-top: 100vh;
+  }
+
   .contenedor___perfil---emprendedor___mobile {
     margin-top: 320vh;
   }
 
   #footerCambianteDos {
     bottom: -420vh;
+  }
+
+  #footerInicioSesionRegistro {
+    margin-top: 100vh;
   }
 }
 
