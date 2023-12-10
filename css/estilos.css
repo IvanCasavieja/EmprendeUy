@@ -1455,4 +1455,41 @@ footer {
   }
 }
 
+/* ambos */
+
+@media screen and (max-width: 600px) and (max-height: 845px) {
+  #footerCambiante {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 760px) {
+  #footerCambiante {
+    margin-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 645px) {
+  #footerCambiante {
+    margin-top: 50vh;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 530px) {
+  #footerCambiante {
+    margin-top: 80vh;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 445px) {
+  #footerCambiante {
+    margin-top: 110vh;
+  }
+}
+@media screen and (max-width: 600px) and (max-height: 380px) {
+  #footerCambiante {
+    margin-top: 140vh;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */
