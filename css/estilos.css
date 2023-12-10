@@ -1326,12 +1326,21 @@ footer {
 
 @media (max-height: 845px) {
 
+  .formulario___inicio---sesion,
+  .formulario___registro {
+    margin-top: 15vh;
+  }
+
   .contenedor___perfil---emprendedor___mobile {
     margin-top: 70vh;
   }
 
   #footerCambianteDos {
     bottom: -110vh;
+  }
+
+  #footerInicioSesionRegistro {
+    margin-top: 15vh;
   }
 }
 
