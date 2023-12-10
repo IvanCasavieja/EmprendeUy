@@ -1149,6 +1149,11 @@ footer {
 }
 
 @media (max-width: 460px) {
+
+  .contenedor___titulo---principal {
+    margin: 200px 0px 200px 0px;
+  }
+
   #listaBtn {
     padding: 0;
   }
