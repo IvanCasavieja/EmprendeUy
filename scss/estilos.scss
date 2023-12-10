@@ -11,7 +11,6 @@
 		background-position: 0 50%;
 	}
 }
-
 @-webkit-keyframes esfera-girando {
 	from {
 		background-position: left center;
@@ -20,7 +19,17 @@
 		background-position: -51px center;
 	}
 }
-
+/* navegador */
+/* formulario inicio de sesion */
+/* formulario de registro */
+/* titulo principal */
+/* filtro market */
+/* perfil emprendedor */
+/* footer */
+/* media querys width*/
+/* media querys height */
+/* ambos */
+/*# sourceMappingURL=estilos.css.map */
 * {
 	padding: 0;
 	margin: 0;
@@ -30,7 +39,7 @@
 body {
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(45deg, $background-color_1, rgb(195, 203, 209), rgb(142, 167, 189));
+	background: linear-gradient(45deg, aliceblue, rgb(195, 203, 209), rgb(142, 167, 189));
 	background-size: 400% 400%;
 	position: relative;
 	animation: cambiar 15s ease-in-out infinite;
@@ -38,8 +47,6 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 }
-
-/* navegador */
 header {
 	width: 100%;
 	height: 70px;
@@ -96,7 +103,7 @@ header {
 		list-style: none;
 		a {
 			text-decoration: none;
-			color: $color_2;
+			color: $color_1;
 			position: relative;
 			cursor: pointer;
 			margin-bottom: 0px;
@@ -104,11 +111,11 @@ header {
 				content: "";
 				position: absolute;
 				width: 0;
-				background-color: $efectoSubrayadoBtns;
+				background-color: $background-color_2;
 				height: 1px;
 				bottom: 0;
 				text-align: center;
-				transition: .5s;
+				transition: 0.5s;
 			}
 			&:hover {
 				&::before {
@@ -121,11 +128,11 @@ header {
 				content: "";
 				position: absolute;
 				width: 0;
-				background-color: $efectoSubrayadoBtns;
+				background-color: $background-color_2;
 				height: 1px;
 				bottom: 0;
 				text-align: center;
-				transition: .5s;
+				transition: 0.5s;
 			}
 			&:hover {
 				&::before {
@@ -137,7 +144,7 @@ header {
 }
 #idioma {
 	text-decoration: none;
-	color: $color_2;
+	color: $color_1;
 	position: relative;
 	cursor: pointer;
 	margin-bottom: 0px;
@@ -145,7 +152,7 @@ header {
 #divIdioma {
 	width: 120px;
 	height: 150px;
-	background-color: $color_4;
+	background-color: $background-color_3;
 	display: none;
 	position: absolute;
 	left: 80%;
@@ -154,8 +161,6 @@ header {
 main {
 	height: calc(100vh - 70px);
 }
-
-/* formulario inicio de sesion */
 .contenedor___formulario {
 	display: flex;
 	justify-content: center;
@@ -172,19 +177,19 @@ main {
 	flex-direction: column;
 	gap: 30px;
 	align-items: center;
-	background-color: $color_6;
+	background-color: $background-color_4;
 	h1 {
-		color: $color_2;
+		color: $color_1;
 		font-family: $font-family_2;
 		margin-top: 20px;
 	}
 	a {
 		text-decoration: none;
-		transition: .3s;
-		color: $color_2;
+		transition: 0.3s;
+		color: $color_1;
 		margin-top: -20px;
 		&:hover {
-			color: $color_hover-btn;
+			color: $color_2;
 		}
 	}
 }
@@ -204,7 +209,7 @@ main {
 		top: 10px;
 		left: 0;
 		font-size: 16px;
-		color: $color_4;
+		color: $color_3;
 		pointer-events: none;
 		transition: 0.5s ease all;
 	}
@@ -212,24 +217,24 @@ main {
 input {
 	&:focus {
 		outline: none;
-		border-bottom: 1px solid $color_hover-btn;
+		border-bottom: 1px solid rgb(0, 132, 255);
 	}
 	&:focus+label {
 		top: -20px;
 		font-size: 12px;
-		color: $color_hover-btn;
+		color: $color_2;
 	}
 	&:valid+label {
 		top: -20px;
 		font-size: 12px;
-		color: $color_hover-btn;
+		color: $color_2;
 	}
 }
 #submitIR {
 	padding: 8px 18px;
 	border: none;
-	background-color: $hoverSubmit;
-	color: $color_6;
+	background-color: $background-color_5;
+	color: $color_4;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -239,11 +244,11 @@ input {
 	border-radius: 8px;
 	transition-duration: 0.4s;
 	&:hover {
-		background-color: $color_hover-btn;
+		background-color: $color_2;
 		transform: scale(1.05);
 	}
 	&:active {
-		background-color: $color_hover-btn;
+		background-color: $color_2;
 	}
 	&:focus {
 		outline: none;
@@ -259,15 +264,13 @@ input {
 	margin-top: 30px;
 	a {
 		text-decoration: none;
-		transition: .3s;
-		color: $color_2;
+		transition: 0.3s;
+		color: $color_1;
 		&:hover {
-			color: $color_hover-btn;
+			color: $color_2;
 		}
 	}
 }
-
-/* formulario de registro */
 .formulario___registro {
 	width: 400px;
 	height: 500px;
@@ -276,9 +279,9 @@ input {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: $color_6;
+	background-color: $background-color_4;
 	h1 {
-		color: $color_2;
+		color: $color_1;
 		font-family: $font-family_2;
 		margin-top: 20px;
 	}
@@ -299,7 +302,7 @@ input {
 		top: 10px;
 		left: 0;
 		font-size: 16px;
-		color: $color_4;
+		color: $color_3;
 		pointer-events: none;
 		transition: 0.5s ease all;
 	}
@@ -332,17 +335,15 @@ select {
 	option {
 		padding: 10px;
 		&:checked {
-			background-color: $color_hover-btn;
-			color: $color_6;
+			background-color: $color_2;
+			color: $color_4;
 		}
 	}
 }
-
-/* titulo principal */
 .contenedor___titulo---principal {
 	height: 300px;
 	width: 400px;
-	color: $color_2;
+	color: $color_1;
 	position: absolute;
 	left: 20%;
 	top: 25%;
@@ -381,16 +382,16 @@ select {
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
-		color: $color_2;
+		color: $color_1;
 		background-color: $background-color_1;
 		height: 30px;
 		width: 80px;
 		border-radius: 8px;
 		cursor: pointer;
-		transition: .5s;
+		transition: 0.5s;
 		&:hover {
-			background-color: $color_hover-btn;
-			color: $color_6;
+			background-color: $color_2;
+			color: $color_4;
 		}
 	}
 }
@@ -421,8 +422,6 @@ select {
 	left: 65%;
 	top: 45%;
 }
-
-/* filtro market */
 .contenedor___palabra---filtro {
 	margin-left: 20px;
 	margin-top: 25px;
@@ -460,15 +459,32 @@ select {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	color: $color_2;
-	transition: .5s;
+	color: $color_1;
+	transition: 0.5s;
 	text-align: center;
 }
 #palabraFiltro {
 	&:hover+.contenedor___icono---animado {
-		background-color: $color_6;
+		background-color: $background-color_4;
 		transform: rotate(360deg);
 	}
+}
+.contenedor___paginas {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 10px;
+	a {
+		text-decoration: none;
+		color: $color_1;
+	}
+}
+.contenedorTotalPaginasMarket {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: auto;
+	height: 550px;
 }
 .container {
 	display: flex;
@@ -476,21 +492,21 @@ select {
 	justify-content: center;
 	a {
 		text-decoration: none;
-		color: $color_2;
+		color: $color_1;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 }
 .card {
-	background-color: $color_6;
+	background-color: $background-color_4;
 	width: 200px;
 	margin: 10px;
 	overflow: hidden;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	color: $color_2;
-	transition: .5s;
+	color: $color_1;
+	transition: 0.5s;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -524,8 +540,6 @@ select {
 		margin: 10px 0;
 	}
 }
-
-/* perfil emprendedor */
 .centrado___emprendedor---perfil {
 	display: flex;
 	align-items: center;
@@ -537,14 +551,14 @@ select {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 50% 50%;
-	background-color: $color_6;
+	background-color: $background-color_4;
 	border-radius: 8px;
-	color: $color_2;
+	color: $color_1;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .contenedor___columna---uno {
 	display: grid;
-	grid-template-areas: "imagenEmprendedor nombreEmprendedor nombreEmprendedor" "imagenEmprendedor serviciosEmprendedor serviciosEmprendedor";
+	grid-template-areas: "imagenEmprendedor nombreEmprendedor nombreEmprendedor" "serviciosEmprendedor serviciosEmprendedor serviciosEmprendedor";
 }
 .contenedor___img---emprendedor___vista---usuario {
 	grid-area: imagenEmprendedor;
@@ -553,6 +567,7 @@ select {
 		width: 100%;
 		min-width: 200px;
 		height: 200px;
+		object-fit: cover;
 	}
 }
 .informacion___personal---emprendedor___vista---usuario {
@@ -563,9 +578,8 @@ select {
 }
 .lista___de---servicios {
 	grid-area: serviciosEmprendedor;
-	ul {
-		list-style: none;
-	}
+	display: flex;
+	justify-content: space-around;
 }
 .contenedor___columna---dos {
 	display: flex;
@@ -582,18 +596,69 @@ select {
 	align-items: center;
 	justify-content: center;
 	min-width: 300px;
+	width: 100%;
 }
-.carrusel___imagenes---trabajos___emprendedor {
-	width: 50%;
-	min-width: 300px;
+.information {
+	margin-left: 25px;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	border-radius: 15px;
+	margin-right: 25px;
+	overflow: hidden;
+	width: 55%;
 }
-.contenedor___columna---cuatro {
+.container___slider {
+	width: 100%;
+	height: 40%;
+	max-width: 900px;
+	position: relative;
+}
+.slider {
+	display: flex;
+	width: 300%;
+	height: 100%;
+	margin-left: -100%;
+}
+.slider___section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slider___img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.btn___slider {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 15px;
+	background-color: $background-color_1;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	font-weight: bold;
+	transition: 0.5s;
+	border: none;
+	&:hover {
+		background-color: $color_2;
+	}
+}
+.btn___slider---derecha {
+	right: 10px;
+}
+.btn___slider---izquierda {
+	left: 10px;
 }
 .contenedor___perfil---emprendedor___mobile {
 	display: none;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	height: 1200px;
 	gap: 40px;
 }
 .contenedor___imagen---nombre___emprendedor---mobile {
@@ -615,10 +680,23 @@ select {
 	display: flex;
 	flex-direction: column;
 	padding: 0px 20px;
+	align-items: center;
 	ul {
 		width: 50%;
 		display: flex;
 		flex-direction: column;
+	}
+}
+.contenedor___lista---servicios {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	ul {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		padding: 0;
+		margin: 0;
 	}
 }
 .mapa___zona---trabajo___mobile {
@@ -632,15 +710,44 @@ select {
 		height: 300px;
 	}
 }
-.carrusel___imagenes---trabajos___emprendedor---mobile {
-	width: 80%;
-	max-width: 800px;
+.contenedor___columna---cuatro {
+	display: flex;
+	justify-content: center;
 }
-
-/* footer */
+#formularioConsultas {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+	input {
+		width: 80%;
+		border: none;
+		outline: none;
+		border-bottom: 1px solid rgb(0, 132, 255);
+	}
+	textArea {
+		width: 80%;
+		outline: none;
+		border: 1px solid rgb(0, 132, 255);
+		border-radius: 8px;
+		resize: none;
+	}
+	#submit {
+		width: 80px;
+		background-color: $background-color_1;
+		border: none;
+		transition: .5s;
+		border-radius: 8px;
+		&:hover {
+			background-color: $color_2;
+			color: $color_4;
+		}
+	}
+}
 footer {
 	height: 200px;
-	background-color: $background_color-footer;
+	background-color: $background-color_7;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -658,10 +765,10 @@ footer {
 	h2 {
 		margin-bottom: 5px;
 		font-size: 20px;
-		color: $color_4;
+		color: $color_3;
 	}
 	p {
-		color: $color_4;
+		color: $color_3;
 		cursor: text;
 	}
 }
@@ -673,7 +780,7 @@ footer {
 	h2 {
 		margin-bottom: 5px;
 		font-size: 20px;
-		color: $color_4;
+		color: $color_3;
 	}
 	a {
 		text-decoration: none;
@@ -702,27 +809,37 @@ footer {
 	display: none;
 	a {
 		text-decoration: none;
-		color: $color_4;
+		color: $color_3;
 		display: flex;
 		width: 100%;
 		justify-content: center;
-		transition: .5s;
+		transition: 0.5s;
 		&:hover {
-			color: $color_hover-btn;
+			color: $color_2;
+		}
+	}
+}
+#tercerEstructuraFooter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		color: $color_3;
+		font-size: 20px;
+		text-align: center;
+	}
+	p {
+		color: $color_3;
+		margin-top: 30px;
+		a {
+			color: $color_2;
+			text-decoration: none;
 		}
 	}
 }
 .contendor___informacion---footer___mobile {
 	display: none;
 }
-
-/* media querys */
-$color_1: white;
-$color_2: rgb(0, 132, 255);
-$background-color_1: white;
-
-/* media querys */
-/* media querys height */
 @media (max-width: 1670px) {
 	.imagen___fondo {
 		left: 70%;
@@ -737,7 +854,20 @@ $background-color_1: white;
 		top: 45%;
 	}
 }
+@media (max-width: 1540px) {
+	.contenedorTotalPaginasMarket {
+		height: 650px;
+	}
+}
+@media (max-width: 1425px) {
+	#divIdioma {
+		left: 75%;
+	}
+}
 @media (max-width: 1260px) {
+	#divIdioma {
+		left: 70%;
+	}
 	.contenedor___centrador---titulo___principal {
 		display: flex;
 		align-items: center;
@@ -756,6 +886,9 @@ $background-color_1: white;
 	}
 	.imagen___fondo---3 {
 		display: none;
+	}
+	.information {
+		width: 60%;
 	}
 	.contenedor___imagenes---redes {
 		gap: 30px;
@@ -784,10 +917,8 @@ $background-color_1: white;
 			align-items: center;
 		}
 	}
-	#footerCambiante {
-		position: absolute;
-		bottom: -400px;
-		bottom: -20vh;
+	.information {
+		width: 80%;
 	}
 	#segundoParrafoFooter {
 		display: none;
@@ -814,11 +945,11 @@ $background-color_1: white;
 				font-size: 17px;
 			}
 		}
-	}
-}
-@media (max-width: 880px) {
-	#footerCambiante {
-		bottom: -60vh;
+		#tercerEstructuraFooter {
+			h2 {
+				font-size: 17px;
+			}
+		}
 	}
 }
 @media (max-width: 708px) {
@@ -830,14 +961,21 @@ $background-color_1: white;
 	}
 }
 @media (max-width: 660px) {
+	#divIdioma {
+		left: 60%;
+	}
 	.contenedor___principal---perfil___emprendedor---vista___usuario {
 		display: none;
 	}
 	.contenedor___perfil---emprendedor___mobile {
 		display: flex;
 		margin-top: 30vh;
-		background-color: $background-color_1;
+		background-color: $background-color_4;
 		border-radius: 8px;
+	}
+	#formularioConsultas {
+		width: 100%;
+		gap: 40px;
 	}
 	.contenedor___informacion---pagina___footer {
 		padding: 20px 1px;
@@ -856,15 +994,24 @@ $background-color_1: white;
 	footer {
 		height: 260px;
 	}
-	#footerCambiante {
-		bottom: -100vh;
-	}
 	#footerCambianteDos {
 		position: absolute;
 		bottom: -70vh;
 	}
 }
 @media (max-width: 460px) {
+	.contenedor___titulo---principal {
+		margin: 200px 0px 200px 0px;
+		border-radius: 8px;
+		height: 400px;
+		width: auto;
+		justify-content: space-around;
+		padding: 0px 10px;
+		h1 {
+			width: 80%;
+			font-size: 28px;
+		}
+	}
 	#listaBtn {
 		padding: 0;
 	}
@@ -878,19 +1025,11 @@ $background-color_1: white;
 	.contenedor___nav---ordenado {
 		width: 70%;
 	}
-	.contenedor___titulo---principal {
-		border-radius: 8px;
-		height: 400px;
-		width: auto;
-		justify-content: space-around;
-		padding: 0px 10px;
-		h1 {
-			width: 80%;
-			font-size: 28px;
-		}
-	}
 	.contenedor___img---icono {
 		display: none;
+	}
+	.contenedorTotalPaginasMarket {
+		height: 700px;
 	}
 	.card {
 		width: 220px;
@@ -943,7 +1082,7 @@ $background-color_1: white;
 		align-items: center;
 		a {
 			text-decoration: none;
-			color: $color_1;
+			color: $color_4;
 			transition: 0.5s;
 			&:hover {
 				color: $color_2;
@@ -955,23 +1094,25 @@ $background-color_1: white;
 	}
 	.acerca___de---nosotros {
 		width: 100%;
+		display: flex;
+		flex-direction: column;
 		text-align: center;
 		padding-left: 20px;
 		margin-top: 20px;
 		a {
 			text-decoration: none;
-			color: $color_1;
+			color: $color_4;
 			transition: 0.5s;
 			&:hover {
 				color: $color_2;
 			}
 		}
 	}
-	#footerCambiante {
-		bottom: -230vh;
-	}
 }
 @media (max-width: 375px) {
+	#divIdioma {
+		left: 45%;
+	}
 	.formulario___registro {
 		h1 {
 			margin: 0;
@@ -998,64 +1139,141 @@ $background-color_1: white;
 	}
 }
 @media (max-height: 845px) {
-	#mainCambiante {
-		height: auto;
+	.formulario___inicio---sesion {
+		margin-top: 15vh;
+	}
+	.formulario___registro {
+		margin-top: 15vh;
 	}
 	.contenedor___perfil---emprendedor___mobile {
-		margin-top: 60vh;
+		margin-top: 70vh;
 	}
 	#footerCambianteDos {
-		bottom: -100vh;
+		bottom: -110vh;
 	}
-	#footerCambiante {
-		position: static;
+	#footerInicioSesionRegistro {
+		margin-top: 15vh;
 	}
 }
-@media (max-height: 695px) {
+@media (max-height: 750px) {
 	.contenedor___perfil---emprendedor___mobile {
 		margin-top: 85vh;
 	}
 	#footerCambianteDos {
-		bottom: -140vh;
+		bottom: -125vh;
+	}
+}
+@media (max-height: 695px) {
+	.contenedor___perfil---emprendedor___mobile {
+		margin-top: 115vh;
+	}
+	#footerCambianteDos {
+		bottom: -165vh;
 	}
 }
 @media (max-height: 600px) {
+	.formulario___inicio---sesion {
+		margin-top: 30vh;
+	}
+	.formulario___registro {
+		margin-top: 30vh;
+	}
 	.contenedor___perfil---emprendedor___mobile {
-		margin-top: 110vh;
+		margin-top: 145vh;
 	}
 	#footerCambianteDos {
-		bottom: -170vh;
+		bottom: -195vh;
+	}
+	#footerInicioSesionRegistro {
+		margin-top: 30vh;
 	}
 }
 @media (max-height: 530px) {
 	.contenedor___perfil---emprendedor___mobile {
-		margin-top: 140vh;
-	}
-	#footerCambianteDos {
-		bottom: -210vh;
-	}
-}
-@media (max-height: 460px) {
-	.contenedor___perfil---emprendedor___mobile {
 		margin-top: 180vh;
 	}
 	#footerCambianteDos {
-		bottom: -250vh;
+		bottom: -235vh;
+	}
+}
+@media (max-height: 460px) {
+	.formulario___inicio---sesion {
+		margin-top: 50vh;
+	}
+	.formulario___registro {
+		margin-top: 50vh;
+	}
+	.contenedor___perfil---emprendedor___mobile {
+		margin-top: 220vh;
+	}
+	#footerCambianteDos {
+		bottom: -295vh;
+	}
+	#footerInicioSesionRegistro {
+		margin-top: 50vh;
 	}
 }
 @media (max-height: 400px) {
+	.formulario___inicio---sesion {
+		margin-top: 75vh;
+	}
+	.formulario___registro {
+		margin-top: 75vh;
+	}
 	.contenedor___perfil---emprendedor___mobile {
-		margin-top: 240vh;
+		margin-top: 290vh;
 	}
 	#footerCambianteDos {
-		bottom: -330vh;
+		bottom: -370vh;
+	}
+	#footerInicioSesionRegistro {
+		margin-top: 75vh;
 	}
 }
 @media (max-height: 330px) {
+	.formulario___inicio---sesion {
+		margin-top: 100vh;
+	}
+	.formulario___registro {
+		margin-top: 100vh;
+	}
 	.contenedor___perfil---emprendedor___mobile {
-		margin-top: 280vh;
+		margin-top: 320vh;
 	}
 	#footerCambianteDos {
-		bottom: -380vh;
+		bottom: -420vh;
+	}
+	#footerInicioSesionRegistro {
+		margin-top: 100vh;
+	}
+}
+@media screen and (max-width: 600px) and (max-height: 845px) {
+	#footerCambiante {
+		margin-top: 10vh;
+	}
+}
+@media screen and (max-width: 600px) and (max-height: 760px) {
+	#footerCambiante {
+		margin-top: 30vh;
+	}
+}
+@media screen and (max-width: 600px) and (max-height: 645px) {
+	#footerCambiante {
+		margin-top: 50vh;
+	}
+}
+@media screen and (max-width: 600px) and (max-height: 530px) {
+	#footerCambiante {
+		margin-top: 80vh;
+	}
+}
+@media screen and (max-width: 600px) and (max-height: 445px) {
+	#footerCambiante {
+		margin-top: 110vh;
+	}
+}
+@media screen and (max-width: 600px) and (max-height: 380px) {
+	#footerCambiante {
+		margin-top: 140vh;
 	}
 }

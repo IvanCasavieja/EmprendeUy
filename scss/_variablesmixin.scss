@@ -1,19 +1,12 @@
-$efectoSubrayadoBtns: black;
-$font-family_1: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-$font-family_2: 'Times New Roman', Times, serif;
-$color_2: black;
-$color_4: #bdbcbc;
-$color_6: white;
-$color_hover-btn: rgb(0, 132, 255);
+$color_1: black;
+$color_2: rgb(0, 132, 255);
+$color_3: #bdbcbc;
+$color_4: white;
+$font-family_1: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+$font-family_2: "Times New Roman", Times, serif;
 $background-color_1: aliceblue;
-$hoverSubmit: rgb(7, 42, 75);
-$background_color-footer: rgb(54, 54, 54);
-
-
-@mixin formularioFlex{
-    width: auto;
-    padding: 10px;
-}
-@mixin botonesAuto{
-    width: auto;
-}
+$background-color_2: black;
+$background-color_3: #bdbcbc;
+$background-color_4: white;
+$background-color_5: rgb(7, 42, 75);
+$background-color_7: rgb(54, 54, 54);

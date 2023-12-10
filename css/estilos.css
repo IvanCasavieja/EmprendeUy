@@ -43,7 +43,8 @@ body {
   justify-content: space-between;
 }
 
-/* navegador */
+/* header */
+
 header {
   width: 100%;
   height: 70px;
@@ -166,11 +167,14 @@ header nav {
   top: 5%;
 }
 
+/* fin header */
+
 main {
   height: calc(100vh - 70px);
 }
 
-/* formulario inicio de sesion */
+/* formulario inicio registro */
+
 .contenedor___formulario {
   display: flex;
   justify-content: center;
@@ -297,7 +301,6 @@ input:valid+label {
   color: rgb(0, 132, 255);
 }
 
-/* formulario de registro */
 .formulario___registro {
   width: 400px;
   height: 500px;
@@ -380,7 +383,10 @@ select option:checked {
   color: white;
 }
 
-/* titulo principal */
+/* fin formulario */
+
+/* inicio index */
+
 .contenedor___titulo---principal {
   height: 300px;
   width: 400px;
@@ -473,7 +479,10 @@ select option:checked {
   top: 45%;
 }
 
-/* filtro market */
+/* fin inicio index */
+
+/* market */
+
 .contenedor___palabra---filtro {
   margin-left: 20px;
   margin-top: 25px;
@@ -610,7 +619,10 @@ select option:checked {
   margin: 10px 0;
 }
 
+/* fin market */
+
 /* perfil emprendedor */
+
 .centrado___emprendedor---perfil {
   display: flex;
   align-items: center;
@@ -734,7 +746,6 @@ select option:checked {
 
 .btn___slider:hover {
   background-color: rgb(0, 132, 255);
-
 }
 
 .btn___slider---derecha {
@@ -775,6 +786,12 @@ select option:checked {
   align-items: center;
 }
 
+.contenedor___lista---servicios___mobile ul {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
 .contenedor___lista---servicios {
   display: flex;
   align-items: center;
@@ -787,12 +804,6 @@ select option:checked {
   text-align: center;
   padding: 0;
   margin: 0;
-}
-
-.contenedor___lista---servicios___mobile ul {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
 }
 
 .mapa___zona---trabajo___mobile {
@@ -840,7 +851,7 @@ select option:checked {
   width: 80px;
   background-color: aliceblue;
   border: none;
-  transition: .5s;
+  transition: 0.5s;
   border-radius: 8px;
 }
 
@@ -849,7 +860,10 @@ select option:checked {
   color: white;
 }
 
+/* fin perfil emprendedor */
+
 /* footer */
+
 footer {
   height: 200px;
   background-color: rgb(54, 54, 54);
@@ -964,7 +978,10 @@ footer {
   display: none;
 }
 
-/* media querys width*/
+/* fin footer */
+
+/* MEDIA QUERYS WIDTH */
+
 @media (max-width: 1670px) {
   .imagen___fondo {
     left: 70%;
@@ -980,7 +997,6 @@ footer {
     left: 72%;
     top: 45%;
   }
-
 }
 
 @media (max-width: 1540px) {
@@ -989,7 +1005,7 @@ footer {
   }
 }
 
-@media(max-width: 1425px) {
+@media (max-width: 1425px) {
   #divIdioma {
     left: 75%;
   }
@@ -1100,7 +1116,6 @@ footer {
 }
 
 @media (max-width: 660px) {
-
   #divIdioma {
     left: 60%;
   }
@@ -1149,9 +1164,18 @@ footer {
 }
 
 @media (max-width: 460px) {
-
   .contenedor___titulo---principal {
     margin: 200px 0px 200px 0px;
+    border-radius: 8px;
+    height: 400px;
+    width: auto;
+    justify-content: space-around;
+    padding: 0px 10px;
+  }
+
+  .contenedor___titulo---principal h1 {
+    width: 80%;
+    font-size: 28px;
   }
 
   #listaBtn {
@@ -1169,19 +1193,6 @@ footer {
 
   .contenedor___nav---ordenado {
     width: 70%;
-  }
-
-  .contenedor___titulo---principal {
-    border-radius: 8px;
-    height: 400px;
-    width: auto;
-    justify-content: space-around;
-    padding: 0px 10px;
-  }
-
-  .contenedor___titulo---principal h1 {
-    width: 80%;
-    font-size: 28px;
   }
 
   .contenedor___img---icono {
@@ -1288,7 +1299,6 @@ footer {
 }
 
 @media (max-width: 375px) {
-
   #divIdioma {
     left: 45%;
   }
@@ -1322,11 +1332,15 @@ footer {
   }
 }
 
-/* media querys height */
+/* FIN MEDIA QUERYS WIDTH */
+
+/* MEDIA QUERYS HEIGHT */
 
 @media (max-height: 845px) {
+  .formulario___inicio---sesion {
+    margin-top: 15vh;
+  }
 
-  .formulario___inicio---sesion,
   .formulario___registro {
     margin-top: 15vh;
   }
@@ -1345,7 +1359,6 @@ footer {
 }
 
 @media (max-height: 750px) {
-
   .contenedor___perfil---emprendedor___mobile {
     margin-top: 85vh;
   }
@@ -1366,8 +1379,10 @@ footer {
 }
 
 @media (max-height: 600px) {
+  .formulario___inicio---sesion {
+    margin-top: 30vh;
+  }
 
-  .formulario___inicio---sesion,
   .formulario___registro {
     margin-top: 30vh;
   }
@@ -1396,8 +1411,10 @@ footer {
 }
 
 @media (max-height: 460px) {
+  .formulario___inicio---sesion {
+    margin-top: 50vh;
+  }
 
-  .formulario___inicio---sesion,
   .formulario___registro {
     margin-top: 50vh;
   }
@@ -1416,8 +1433,10 @@ footer {
 }
 
 @media (max-height: 400px) {
+  .formulario___inicio---sesion {
+    margin-top: 75vh;
+  }
 
-  .formulario___inicio---sesion,
   .formulario___registro {
     margin-top: 75vh;
   }
@@ -1436,8 +1455,10 @@ footer {
 }
 
 @media (max-height: 330px) {
+  .formulario___inicio---sesion {
+    margin-top: 100vh;
+  }
 
-  .formulario___inicio---sesion,
   .formulario___registro {
     margin-top: 100vh;
   }
@@ -1455,7 +1476,9 @@ footer {
   }
 }
 
-/* ambos */
+/* FIN MEDIA QUERYS HEIGHT */
+
+/* MEDIA QUERYS AMBOS */
 
 @media screen and (max-width: 600px) and (max-height: 845px) {
   #footerCambiante {
@@ -1486,10 +1509,14 @@ footer {
     margin-top: 110vh;
   }
 }
+
 @media screen and (max-width: 600px) and (max-height: 380px) {
   #footerCambiante {
     margin-top: 140vh;
   }
 }
+
+/* FIN MEDIA QUERYS AMBOS */
+
 
 /*# sourceMappingURL=estilos.css.map */
