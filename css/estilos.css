@@ -1164,7 +1164,7 @@ footer {
 }
 
 @media (max-width: 460px) {
-  .contenedor___titulo---principal {
+  /* .contenedor___titulo---principal {
     margin: 200px 0px 200px 0px;
     border-radius: 8px;
     height: 400px;
@@ -1185,7 +1185,7 @@ footer {
   .img___icono {
     display: none;
   }
-
+ */
   .contenedor___nav---ordenado___img---icono---mobile {
     display: flex;
     width: 30%;
